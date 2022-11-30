@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="../source/img/logo-mobile.svg" width="34" height="38" alt="Кот">
+    </a>
+    <a class="main-header__logo-cat-energy">
+      <img class="main-header__logo-cat-energy-image" src="../source/img/logo_cat_energy.svg" width="101" height="18"
+        alt="Кэт Энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item main-nav__list__item--current">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="main__title">Подбор программы</h1>
+    <p class="main__description">Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+    <form class="main__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="main__form-basic">
+        <p class="main__form-basic__name">
+          <label class="main__form-basic__name-label" for="appointment-name">Имя:<sup>*</sup></label>
+          <input type="text" id="appointment-name" name="appointment-name" placeholder="Барсик">
+        </p>
+        <p class="main__form-basic__weight">
+          <label class="main__form-basic__weight-label" for="appointment-weight">Вес (кг):<sup>*</sup></label>
+          <input type="text" id="appointment-weight" name="appointment-weight" placeholder="7">
+        </p>
+        <p class="main__form-basic__age">
+          <label class="main__form-basic__age-label" for="appointment-age">Возраст (лет):<sup>*</sup></label>
+          <input type="text" id="appointment-age" name="appointment-age" placeholder="7">
+        </p>
+      </fieldset>
+      <fieldset class="main__form-target">
+        <p class="main__form-target__point"><label><input type="radio">Похудение</label></p>
+        <p class="main__form-target__point"><label><input type="radio">Набор массы</label></p>
+        <p class="main__form-target__point"><label><input type="radio">Не знаю (Нужен ваш совет)</label></p>
+      </fieldset>
+      <fieldset class="main__form-contact-information">
+        <legend class="main__form-contact-information__title">Контактные данные
+          (владельца кота)</legend>
+        <p class="main__form-contact-information__email">
+          <label class="main__form-contact-information-email-label main__form-contact-information-email-label--icon"
+            for="appointment-email">E-mail:<sup>*</sup></label>
+          <input type="email" id="appointment-email" name="appointment-email" placeholder="kuklachev@gmail.com">
+        </p>
+        <p class="main__form-contact-information__phone">
+          <label class="main__form-contact-information-phone-label main__form-contact-information-phone-label--icon"
+            for="appointment-phone">Телефон:<sup>*</sup></label>
+          <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90">
+        </p>
+      </fieldset>
+      <fieldset class="main__form-comments">
+        <legend class="main__form-comments__title">Комментарий</legend>
+        <input type="text" name="comments" placeholder="Расскажите обо всех повадках кота">
+      </fieldset>
+      <fieldset class="main__form-optional">
+        <legend class="main__form-optional__title">Дополнительно</legend>
+          <p class="main__form-optional__point"><label><input type="checkbox" checked>Сахарозаменитель</label></p>
+          <p class="main__form-optional__point"><label><input type="checkbox">Питьевая вода</label></p>
+          <p class="main__form-optional__point"><label><input type="checkbox">Молоко</label></p>
+          <p class="main__form-optional__point"><label><input type="checkbox">Витамины</label></p>
+      </fieldset>
+      <button class="main__form-button button" type="submit">Отправить заявку</button>
+    </form>
+    <p><sup>*</sup> — Обязательные поля</p>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <img class="footer__logo-image" src="../source/img/footer_logo_cat_energy.svg" width="128" height="24"
+          alt="Кэт энерджи">
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__item-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vk</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__item-link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__item-link" href="https://t.me/s/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="footer__link-description">HTML Academy</p>
+        <img class="footer__link-img" src="../source/img/logo_html.svg" width="27" height="34" alt="html academy">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
