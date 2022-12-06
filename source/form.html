@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="../source/img/logo-mobile.svg" width="34" height="38" alt="Кот">
     </a>
-    <a class="main-header__logo-cat-energy">
+    <a class="main-header__logo-cat-energy" href="index.html">
       <img class="main-header__logo-cat-energy-image" src="../source/img/logo_cat_energy.svg" width="101" height="18"
         alt="Кэт Энерджи">
     </a>
@@ -18,13 +19,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list__item main-nav__list__item--current">
-            <a>Главная</a>
+            <a class="main-nav__list__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__list__item-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__list__item-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,54 +39,64 @@
       <fieldset class="main__form-basic">
         <p class="main__form-basic__name">
           <label class="main__form-basic__name-label" for="appointment-name">Имя:<sup>*</sup></label>
-          <input type="text" id="appointment-name" name="appointment-name" placeholder="Барсик">
+          <input class="main__form-basic__name-input" type="text" id="appointment-name" name="appointment-name" placeholder="Барсик">
         </p>
         <p class="main__form-basic__weight">
           <label class="main__form-basic__weight-label" for="appointment-weight">Вес (кг):<sup>*</sup></label>
-          <input type="text" id="appointment-weight" name="appointment-weight" placeholder="7">
+          <input class="main__form-basic__weight-input" type="text" id="appointment-weight" name="appointment-weight" placeholder="7">
         </p>
         <p class="main__form-basic__age">
           <label class="main__form-basic__age-label" for="appointment-age">Возраст (лет):<sup>*</sup></label>
-          <input type="text" id="appointment-age" name="appointment-age" placeholder="7">
+          <input class="main__form-basic__age-input" type="text" id="appointment-age" name="appointment-age" placeholder="7">
         </p>
       </fieldset>
       <fieldset class="main__form-target">
-        <p class="main__form-target__point"><label><input type="radio">Похудение</label></p>
-        <p class="main__form-target__point"><label><input type="radio">Набор массы</label></p>
-        <p class="main__form-target__point"><label><input type="radio">Не знаю (Нужен ваш совет)</label></p>
+        <p class="main__form-target__point"><label class="main__form-target__label"><input class="main__form-target__input" type="radio"><span class="main__form-target__input-text">Похудение</span></label></p>
+        <p class="main__form-target__point"><label class="main__form-target__label"><input class="main__form-target__input" type="radio"><span class="main__form-target__input-text">Набор массы</span></label></p>
+        <p class="main__form-target__point"><label class="main__form-target__label"><input class="main__form-target__input" type="radio"><span class="main__form-target__input-text">Не знаю (Нужен ваш совет)</span></label></p>
       </fieldset>
       <fieldset class="main__form-contact-information">
         <legend class="main__form-contact-information__title">Контактные данные
           (владельца кота)</legend>
         <p class="main__form-contact-information__email">
-          <label class="main__form-contact-information-email-label main__form-contact-information-email-label--icon"
+          <label class="main__form-contact-information__email-label main__form-contact-information-email-label--icon"
             for="appointment-email">E-mail:<sup>*</sup></label>
-          <input type="email" id="appointment-email" name="appointment-email" placeholder="kuklachev@gmail.com">
+          <input class="main__form-contact-information__email-input" type="email" id="appointment-email" name="appointment-email" placeholder="kuklachev@gmail.com">
         </p>
         <p class="main__form-contact-information__phone">
-          <label class="main__form-contact-information-phone-label main__form-contact-information-phone-label--icon"
+          <label class="main__form-contact-information__phone-label main__form-contact-information-phone-label--icon"
             for="appointment-phone">Телефон:<sup>*</sup></label>
-          <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90">
+          <input class="main__form-contact-information__phone-input" type="tel" id="appointment-phone" name="appointment-phone" placeholder="8 (960) 900-60-90">
         </p>
       </fieldset>
       <fieldset class="main__form-comments">
         <legend class="main__form-comments__title">Комментарий</legend>
-        <input type="text" name="comments" placeholder="Расскажите обо всех повадках кота">
+        <input class="main__form-comments__input" type="text" name="comments" placeholder="Расскажите обо всех повадках кота">
       </fieldset>
       <fieldset class="main__form-optional">
         <legend class="main__form-optional__title">Дополнительно</legend>
-          <p class="main__form-optional__point"><label><input type="checkbox" checked>Сахарозаменитель</label></p>
-          <p class="main__form-optional__point"><label><input type="checkbox">Питьевая вода</label></p>
-          <p class="main__form-optional__point"><label><input type="checkbox">Молоко</label></p>
-          <p class="main__form-optional__point"><label><input type="checkbox">Витамины</label></p>
+          <p class="main__form-optional__point"><label class="main__form-optional__point__label"><input class="main__form-optional__point__input" type="checkbox" checked><span class="main__form-optional__point__input-text">Сахарозаменитель</span></label></p>
+          <p class="main__form-optional__point"><label class="main__form-optional__point__label"><input class="main__form-optional__point__input" type="checkbox"><span class="main__form-optional__point__input-text">Питьевая вода</span></label></p>
+          <p class="main__form-optional__point"><label class="main__form-optional__point__label"><input class="main__form-optional__point__input" type="checkbox"><span class="main__form-optional__point__input-text">Молоко</span></label></p>
+          <p class="main__form-optional__point"><label class="main__form-optional__point__label"><input class="main__form-optional__point__input" type="checkbox"><span class="main__form-optional__point__input-text">Витамины</span></label></p>
       </fieldset>
       <button class="main__form-button button" type="submit">Отправить заявку</button>
     </form>
-    <p><sup>*</sup> — Обязательные поля</p>
+    <p class="main__text"><sup>*</sup> — Обязательные поля</p>
+    <article class="cooperation">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
+      <div class="cooperation__wrapper">
+        <p class="cooperation__description">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="map">
+          <img class="map__image" src="../source/img/map.png" width="320" height="362" alt="Карта">
+        </div>
+      </div>
+    </article>
   </main>
-  <footer class="footer">
+  <footer class="main-footer">
     <div class="footer__wrapper">
-      <a class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <img class="footer__logo-image" src="../source/img/footer_logo_cat_energy.svg" width="128" height="24"
           alt="Кэт энерджи">
       </a>

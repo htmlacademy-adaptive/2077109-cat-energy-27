@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -18,13 +19,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list__item main-nav__list__item--current">
-            <a>Главная</a>
+            <a class="main-nav__list__item-link">Главная</a>
           </li>
           <li class="main-nav__list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__list__item-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__list__item-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -34,8 +35,10 @@
     <h1 class="visually-hidden">Кэт Энерджи - функциональное питание для котов</h1>
     <section class="cat-eat">
       <div class="cat-eat__wrapper">
-        <h2 class="cat-eat__title">Функциональное<br> питание для котов</h2>
-        <p class="cat-eat__slogan">Занялся собой? Займись котом!</p>
+        <div class="cat-eat__hero">
+          <h2 class="cat-eat__title">Функциональное<br> питание для котов</h2>
+          <p class="cat-eat__slogan">Занялся собой? Займись котом!</p>
+        </div>
         <img class="cat-eat__img" src="../source/img/index_mobile.png" width="280" height="270" alt="Cat Energy PRO">
         <a class="cat-eat__link link" href="form.html">Подобрать программу</a>
       </div>
@@ -107,7 +110,7 @@
         </div>
       </div>
     </section>
-    <article class="cooperation">
+    <article class="cooperation cooperation--color">
       <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
       <div class="cooperation__wrapper">
         <p class="cooperation__description">Приглашаем к сотрудничеству дилеров!</p>

@@ -1,1 +1,104 @@
-// Начните писать стили здесь
+@import "./visually-hidden/visually-hidden.less";
+// Хедер
+@import "./main-header/main-nav/main-nav__list__item-link.less";
+@import "./main-header/main-nav/main-nav__list.less";
+// Главная страница
+@import "./main-container/index/cat-eat/cat-eat__title.less";
+@import "./main-container/index/cat-eat/cat-eat__slogan.less";
+@import "./main-container/index/cat-eat/cat-eat__link.less";
+@import "./main-container/index/cat-eat/cat-eat__hero.less";
+@import "./main-container/index/advantages/advantages__list.less";
+@import "./main-container/index/advantages/advantages__item.less";
+@import "./main-container/index/advantages/advantages__title.less";
+@import "./main-container/index/advantages/advantages__description.less";
+@import "./main-container/index/advantages/advantages__link.less";
+@import "./main-container/index/how-it-works/how-it-works__title.less";
+@import "./main-container/index/how-it-works/how-it-works__list.less";
+@import "./main-container/index/how-it-works/how-it-works__description.less";
+@import "./main-container/index/live-example/live-example__wrapper.less";
+@import "./main-container/index/live-example/live-example__title.less";
+@import "./main-container/index/live-example/live-example__description.less";
+@import "./main-container/index/live-example/live-example__list.less";
+@import "./main-container/index/live-example/live-example__item-title.less";
+@import "./main-container/index/live-example/live-example__item-description.less";
+@import "./main-container/index/live-example/live-example__legend.less";
+// Страница формы
+@import "./main-container/form/main__title.less";
+@import "./main-container/form/main__description.less";
+@import "./main-container/form/main-form/main__form-button.less";
+@import "./main-container/form/main__text.less";
+// fieldset-1
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__name-label.less";
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__name-input.less";
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__age-label.less";
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__age-input.less";
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__weight-label.less";
+@import "./main-container/form/main-form/main__form-basic/main__form-basic__weight-input.less";
+// radio-button
+@import "./main-container/form/main-form/main__form-target/main__form-target__input-text.less";
+// fieldset-2
+@import "./main-container/form/main-form/main__form-contact-information/main__form-contact-information__title.less";
+@import "./main-container/form/main-form/main__form-contact-information/main__form-contact-information__email-label.less";
+@import "./main-container/form/main-form/main__form-contact-information/main__form-contact-information__email-input.less";
+@import "./main-container/form/main-form/main__form-contact-information/main__form-contact-information__phone-label.less";
+@import "./main-container/form/main-form/main__form-contact-information/main__form-contact-information__phone-input.less";
+// fieldset-3
+@import "./main-container/form/main-form/main__form-comments/main__form-comments__title.less";
+@import "./main-container/form/main-form/main__form-comments/main__form-comments__input.less";
+// checkbox
+@import "./main-container/form/main-form/main__form-optional/main__form-optional__title.less";
+@import "./main-container/form/main-form/main__form-optional/main__form-optional__point__input-text.less";
+// Страница каталога
+@import "./main-container/catalog/main-container__catalog/catalog__title.less";
+@import "./main-container/catalog/main-container__catalog/catalog__list.less";
+@import "./main-container/catalog/main-container__catalog/catalog__item-title.less";
+@import "./main-container/catalog/main-container__catalog/catalog__item-list.less";
+@import "./main-container/catalog/main-container__catalog/item__category.less";
+@import "./main-container/catalog/main-container__catalog/item__value.less";
+@import "./main-container/catalog/main-container__catalog/catalog__item-button.less";
+@import "./main-container/catalog/main-container__catalog/show-more__title.less";
+@import "./main-container/catalog/main-container__catalog/show-more__description.less";
+@import "./main-container/catalog/main-container__catalog/show-more__button.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__title.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__list.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__item-title.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__item-category.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__item-value.less";
+@import "./main-container/catalog/main-container__additionally-products/additionally-products__item-button.less";
+@import "./main-container/catalog/main-container__present/present__description.less";
+@import "./main-container/catalog/main-container__present/main-container__present.less";
+// Приглашаем к сотруднечеству + карта
+@import "./main-container/cooperation/cooperation.less";
+@import "./main-container/cooperation/cooperation__description.less";
+@import "./main-container/cooperation/cooperation__adress.less";
+// Футер
+@import "./main-footer/footer__link.less";
+@import "./main-footer/footer__link-description.less";
+@import "./main-footer/main-footer.less";
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
+       url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldmedium.woff2 format") format("woff2"),
+       url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
