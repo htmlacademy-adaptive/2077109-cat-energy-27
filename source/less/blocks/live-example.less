@@ -1,9 +1,22 @@
+.live-example {
+  background-color: @gray;
+}
+
 .live-example__wrapper {
-  background-color: #eaeaea;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+  }
 }
 
 .live-example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -11,13 +24,11 @@
 }
 
 .live-example__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+ .list-reset;
 }
 
 .live-example__legend {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -26,7 +37,7 @@
 }
 
 .live-example__item-title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -35,7 +46,7 @@
 }
 
 .live-example__description {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: @lato;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -43,7 +54,7 @@
 }
 
 .live-example__item-description {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: @lato;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
