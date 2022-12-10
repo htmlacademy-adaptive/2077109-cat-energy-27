@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
@@ -19,21 +19,21 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__list__item main-nav__list__item--current">
-            <a>Главная</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__list__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="main-container__catalog">
+  <main class="main">
+    <section class="catalog">
       <div class="catalog__wrapper">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
@@ -192,14 +192,14 @@
             <button class="catalog__item-button button" type="button">Заказать</button>
           </li>
         </ul>
-        <div class="catalog__show-more catalog__show-more--icon ">
+        <div class="show-more show-more--icon ">
           <b class="show-more__title">Показать еще 100500 товаров</b>
           <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
           <button class="show-more__button button" type="button">Показать все</button>
         </div>
       </div>
     </section>
-    <section class="main-container__additionally-products">
+    <section class="additionally-products">
       <div class="additionally-products__wrapper">
         <h2 class="additionally-products__title">Дополнительные товары</h2>
         <ul class="additionally-products__list">
@@ -246,17 +246,27 @@
         </ul>
       </div>
     </section>
-    <article class="main-container__present">
-      <div class="present__wrapper present__wrapper--image">
-        <p class="present__description present__description--icon">Закажите все
+    <article class="present">
+      <div class="present__wrapper">
+        <p class="present__description">Закажите все
           и получите чехол для
           кота в подарок!</p>
       </div>
     </article>
+    <article class="cooperation cooperation--color">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
+      <div class="cooperation__wrapper">
+        <p class="cooperation__description">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="cooperation__map">
+          <img class="cooperation__map-image" src="../source/img/map.png" width="320" height="362" alt="Карта">
+        </div>
+      </div>
+    </article>
   </main>
-  <footer class="footer">
+  <footer class="main-footer">
     <div class="footer__wrapper">
-      <a class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <img class="footer__logo-image" src="../source/img/footer_logo_cat_energy.svg" width="128" height="24"
           alt="Кэт энерджи">
       </a>
@@ -284,5 +294,4 @@
     </div>
   </footer>
 </body>
-
 </html>
