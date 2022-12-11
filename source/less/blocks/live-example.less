@@ -1,43 +1,68 @@
 .live-example {
   background-color: @gray;
+
+  // @media (min-width: @tablet-width) {
+  //   background-color: @white;
+  // }
+
 }
 
 .live-example__wrapper {
   width: 280px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     width: 708px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: @desktop-width) {
     width: 1220px;
   }
 }
 
+.live-example__block {
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    width: 768px;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
 .live-example__title {
-  font-family: @oswald;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
-.live-example__list {
-  .list-reset;
-}
-
-.live-example__legend {
-  font-family: @oswald;
+.live-example__description {
+  font-family: @font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  line-height: 18px;
 }
 
+.live-example__list {
+  .list-reset();
+  display: flex;
+}
+
+.live-example__block-list {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-bottom: 250px;
+
+  }
+}
+
+.live-example__item {}
+
 .live-example__item-title {
-  font-family: @oswald;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -45,18 +70,37 @@
   text-transform: uppercase;
 }
 
-.live-example__description {
-  font-family: @lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
 .live-example__item-description {
-  font-family: @lato;
+  font-family: @font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
 }
+
+.live-example__legend {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.live-example__slider {
+  background-image: url(../img/cat-slider-mobile.png);
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/cat-slider-tablet.png);
+    width: 560px;
+    height: 512px;
+    background-repeat: no-repeat;
+    margin-top: -190px;
+    padding-bottom: 40px;
+  }
+}
+
+.live-example__slider-img {}

@@ -1,29 +1,62 @@
 .cooperation {
   background-color: @gray;
+
+  &--color {
+    background-color: @white;
+  }
 }
 
 .cooperation__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 26px 20px;
+
+  @media (min-width:@tablet-width) {
+    width: 628px;
+  }
 }
 
-.cooperation--color {
-  background-color: @white;
+.cooperation__text {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cooperation__description {
-  font-family: @oswald;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  min-width: 139px;
+
+  @media (min-width:@tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__adress {
-  font-family: @lato;
+  font-family: @font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  min-width: 139px;
+
+  @media (min-width:@tablet-width) {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
+// .cooperation__map {
+//   margin: 0 auto;
+//   width: 320px;
+//   height: 362px;
+//   background-image: url("../img/map.png");
+// }
