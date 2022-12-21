@@ -1,3 +1,47 @@
+.program-form__block {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+
+  &--checkbox {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      width: 433px;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1125px;
+    }
+  }
+
+  &--button-text {
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.program-form__field {
+  padding: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+
+    &--border {
+      border: 1px solid #e7e7e7;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
 .program-form__field-title {
   font-family: @main-font;
   font-style: normal;
@@ -5,6 +49,17 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program-form__field-point {
+  display: flex;
+  align-items: center;
 }
 
 .program-form__field-label {
@@ -15,9 +70,23 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  padding-right: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__field-input {
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+
   &::placeholder {
     font-family: @main-font;
     font-style: normal;
@@ -26,7 +95,40 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #444444;
-    padding-left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__field-textarea {
+  width: 280px;
+  min-height: 150px;
+  resize: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-family: @main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    min-height: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    min-height: 174px;
   }
 }
 
@@ -38,9 +140,14 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
+  background-color: @button-color;
+  width: 280px;
+  height: 40px;
+  margin-top: 10px;
 }
 
 .program-form__text {
@@ -50,4 +157,8 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }

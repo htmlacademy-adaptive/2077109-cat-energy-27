@@ -1,13 +1,16 @@
 .how-it-works__wrpapper {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     width: 708px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: @desktop-width) {
     width: 1220px;
+    padding-bottom: 200px;
+    padding-top: 50px;
   }
 }
 
@@ -18,7 +21,7 @@
   font-size: 36px;
   line-height: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -29,13 +32,13 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 280px 280px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
 
@@ -45,10 +48,6 @@
   }
 }
 
-// .how-it-works__item {
-//   @media (min-width: 1440px) {}
-// }
-
 .how-it-works__description {
   font-family: @font;
   font-style: normal;
@@ -56,7 +55,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }

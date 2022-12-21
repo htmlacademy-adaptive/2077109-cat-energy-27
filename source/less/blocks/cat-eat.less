@@ -1,6 +1,58 @@
+.cat-eat {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-eat-hero.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #444444;
+    background-size: auto;
+    width: 100%;
+    height: 302px;
+    top: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -112px;
+      right: 0;
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-eat-hero_desk.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-color: #444444;
+      background-size: auto;
+      width: 50%;
+      height: 694px;
+    }
+  }
+}
+
 .cat-eat__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    min-height: 694px;
+  }
+}
+
+.cat-eat__text {
+  padding-top: 24px;
+  padding-bottom: 60px;
 }
 
 .cat-eat__title {
@@ -12,6 +64,12 @@
   color: #ffffff;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 }
 
 .cat-eat__slogan {
@@ -24,6 +82,19 @@
   color: #ffffff;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+.cat-eat__img {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 45%;
+  }
 }
 
 .cat-eat__link {
@@ -34,12 +105,22 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
-}
+  color: @white;
+  display: flex;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #68b738;
+  justify-content: center;
+  align-items: center;
 
-.cat-eat__hero {
-  width: 320px;
-  height: 302px;
-  background-image: url("../img/cat-eat-hero-two.png"),
-    url("../img/cat-eat-hero.png");
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 38%;
+  }
 }

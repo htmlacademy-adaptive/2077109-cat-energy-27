@@ -1,6 +1,23 @@
 .main-header {
-  width: 320px;
-  margin: 0 auto;
-  background-color: #ffffff;
+  background-color: @white;
+}
+
+.main-header__wrapper {
+  padding: 10px 20px 17px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    background-color: transparent;
+  }
 }
