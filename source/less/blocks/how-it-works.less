@@ -1,7 +1,7 @@
 .how-it-works__wrpapper {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  margin-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -20,6 +20,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -31,6 +33,9 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+  .how-it-works__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -48,12 +53,81 @@
   }
 }
 
+.how-it-works__item {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    position: absolute;
+  }
+
+  &--sheet::before {
+    content: "";
+    z-index: 2;
+    background-image: url("../img/how-it-works/how-it-works-sheet.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &--glass::before {
+    content: "";
+    z-index: 2;
+    background-image: url("../img/how-it-works/how-it-works-glass.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &--tableware::before {
+    content: "";
+    z-index: 2;
+    background-image: url("../img/how-it-works/how-it-works-tableware.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &--watch::before {
+    content: "";
+    z-index: 2;
+    background-image: url("../img/how-it-works/how-it-works-watch.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+}
+
 .how-it-works__description {
-  font-family: @font;
+  font-family: @secondary-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 80px;
+  margin: 0;
+
+
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

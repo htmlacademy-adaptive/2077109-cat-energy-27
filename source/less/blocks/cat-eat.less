@@ -1,5 +1,6 @@
 .cat-eat {
   position: relative;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -20,15 +21,12 @@
 
     @media (min-width: @desktop-width) {
       display: block;
-      content: "";
-      position: absolute;
       top: -112px;
       right: 0;
       background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-eat-hero_desk.png");
       background-repeat: no-repeat;
       background-position: top;
       background-color: #444444;
-      background-size: auto;
       width: 50%;
       height: 694px;
     }
@@ -53,6 +51,7 @@
 .cat-eat__text {
   padding-top: 24px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .cat-eat__title {
@@ -64,6 +63,7 @@
   color: #ffffff;
   margin: 0;
   padding: 0;
+
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -80,7 +80,6 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
