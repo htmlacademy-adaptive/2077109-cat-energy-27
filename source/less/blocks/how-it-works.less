@@ -1,14 +1,10 @@
 .how-it-works__wrpapper {
-  width: 280px;
   margin: 0 auto;
   padding-bottom: 10px;
 
-  @media (min-width: @tablet-width) {
-    width: 708px;
-  }
+  .inner-container();
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
     padding-bottom: 200px;
     padding-top: 50px;
   }
@@ -49,7 +45,7 @@
 }
 
 .how-it-works__description {
-  font-family: @font;
+  font-family: @secondary-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

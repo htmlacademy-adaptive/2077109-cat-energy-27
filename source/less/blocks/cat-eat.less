@@ -20,15 +20,12 @@
 
     @media (min-width: @desktop-width) {
       display: block;
-      content: "";
-      position: absolute;
       top: -112px;
       right: 0;
       background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-eat-hero_desk.png");
       background-repeat: no-repeat;
       background-position: top;
       background-color: #444444;
-      background-size: auto;
       width: 50%;
       height: 694px;
     }
@@ -36,16 +33,15 @@
 }
 
 .cat-eat__wrapper {
-  width: 280px;
   margin: 0 auto;
 
+  .inner-container();
+
   @media (min-width: @tablet-width) {
-    width: 708px;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
     min-height: 694px;
   }
 }
