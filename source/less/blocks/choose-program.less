@@ -1,18 +1,38 @@
+.choose-program__wrapper {
+  margin: 0 auto;
+
+  .inner-container();
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+}
+
 .choose-program__title {
-  font-family: @oswald;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .choose-program__description {
-  font-family: @oswald;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
