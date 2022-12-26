@@ -1,4 +1,5 @@
 .program-form__block {
+
   @media (min-width: @desktop-width) {
     display: flex;
   }
@@ -49,7 +50,9 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  padding-bottom: 10px;
+  margin-bottom: 35px;
+
+
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -60,6 +63,7 @@
 .program-form__field-point {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .program-form__field-label {
@@ -71,6 +75,7 @@
   text-transform: uppercase;
   color: #444444;
   padding-right: 13px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -97,17 +102,55 @@
     color: #444444;
   }
 
+  &--radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+
+
+
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
+.program-form__field-input+.program-form__field-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.program-form__field-input+.program-form__field-label::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #CDCDCD;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.program-form__field-input:checked+.program-form__field-label::before {
+  border-color: #68B738;
+  width: 13px;
+  height: 13px;
+
+}
+
+
 .program-form__field-textarea {
   width: 280px;
   min-height: 150px;
   resize: none;
-  padding: 10px 20px;
+  padding: 9px 12px 9px 15px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
 
