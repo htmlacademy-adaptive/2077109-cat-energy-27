@@ -41,33 +41,33 @@
         <p class="choose-program__description">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
         <form class="choose-program__form program-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="program-form__block">
+          <div class="program-form__block program-form__block--basic-data-lose-weight-or-gain">
             <fieldset class="program-form__field program-form__field--basic-data">
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--basic-data">
                 <label class="program-form__field-label" for="appointment-name">Имя:<sup>*</sup></label>
                 <input class="program-form__field-input" type="text" id="appointment-name" name="name"
                   placeholder="Барсик">
               </p>
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--basic-data">
                 <label class="program-form__field-label" for="appointment-weight">Вес(кг):<sup>*</sup></label>
                 <input class="program-form__field-input" type="text" id="appointment-weight" name="weight"
                   placeholder="7">
               </p>
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--basic-data">
                 <label class="program-form__field-label" for="appointment-age">Возраст&nbsp;(лет):</label>
                 <input class="program-form__field-input" type="text" id="appointment-age" name="age" placeholder="7">
               </p>
             </fieldset>
             <fieldset class="program-form__field program-form__field--lose-weight-or-gain">
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <input class="program-form__field-input program-form__field-input--radio" type="radio" id="weight">
                 <label class="program-form__field-label program-form__field-label--radio" for="weight"><span
                     class="program-form__field-text">Похудение</span></label></p>
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <input class="program-form__field-input program-form__field-input--radio" type="radio" id="weight">
                 <label class="program-form__field-label program-form__field-label--radio" for="weight"><span class="program-form__field-text">Набор
                     массы</span></label></p>
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <input class="program-form__field-input program-form__field-input--radio" type="radio" id="weight">
                 <label class="program-form__field-label program-form__field-label--radio" for="weight"><span class="program-form__field-text">Не знаю (Нужен
                     ваш совет)</span></label></p>
@@ -76,17 +76,17 @@
           <fieldset class="program-form__field program-form__field--contact-details">
             <legend class="program-form__field-title">Контактные данные
               (владельца кота)</legend>
-            <div class="program-form__block">
-              <p class="program-form__field-point">
+            <div class="program-form__block program-form__block--contact-details">
+              <p class="program-form__field-point program-form__field-point--contact-details">
                 <label class="program-form__field-label program-form__field-label--icon"
                   for="appointment-email">E-&nbsp;mail:<sup>*</sup></label>
-                <input class="program-form__field-input" type="email" id="appointment-email" name="email"
+                <input class="program-form__field-input program-form__field-input--contact-details-email" type="email" id="appointment-email" name="email"
                   placeholder="kuklachev@gmail.com">
               </p>
-              <p class="program-form__field-point">
+              <p class="program-form__field-point program-form__field-point--contact-details">
                 <label class="program-form__field-label program-form__field-label--icon"
                   for="appointment-phone">Телефон:<sup>*</sup></label>
-                <input class="program-form__field-input" type="tel" id="appointment-phone" name="phone"
+                <input class="program-form__field-input program-form__field-input--contact-details-phone" type="tel" id="appointment-phone" name="phone"
                   placeholder="8 (960) 900-60-90">
               </p>
             </div>
@@ -96,8 +96,8 @@
             <textarea class="program-form__field-textarea" type="text" name="comments"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program-form__field ">
-            <legend class="program-form__field-title">Дополнительно</legend>
+          <fieldset class="program-form__field program-form__field--additional-products">
+            <legend class="program-form__field-title program-form__field-title--additional-products">Дополнительно</legend>
             <div class="program-form__block program-form__block--checkbox">
               <label class="program-form__field-label program-form__field-label--checkbox"><input
                   class="program-form__field-input-checkbox" type="checkbox" checked><span

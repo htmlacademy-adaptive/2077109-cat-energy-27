@@ -1,21 +1,57 @@
+.present {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .present__wrapper {
   background-image: url("../img/catalog_present_cat.png");
   width: 280px;
   height: 290px;
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/present.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 59px;
+    left: 101px;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/catalog_present_cat_tab.png");
     width: 708px;
     height: 200px;
-    background-repeat: no-repeat;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+      background-image: url("../img/present-tablet.svg");
+      top: 57px;
+      left: 77px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/catalog_present_cat_desk.png");
     width: 245px;
     height: 289px;
-    background-repeat: no-repeat;
+
+    &::before {
+      top: 56px;
+      left: 84px;
+    }
   }
 }
 
@@ -27,4 +63,20 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0;
+  position: absolute;
+  bottom: 43px;
+  left: 58px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    left: 422px;
+    top: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 185px;
+    left: 41px;
+    text-align: center;
+  }
 }
