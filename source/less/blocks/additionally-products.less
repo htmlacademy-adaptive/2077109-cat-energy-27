@@ -1,9 +1,10 @@
 .additionally-products__wrapper {
   .container-width();
   margin: 0 auto;
-
+  
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 86px;
     flex-wrap: wrap;
@@ -35,16 +36,11 @@
 
 .additionally-products__list {
   .list-reset();
-
   box-sizing: border-box;
   margin-bottom: 31px;
 
   li:first-child {
     border-top: 1px solid #cdcdcd;
-  }
-
-  li:not(:last-child) {
-    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: @tablet-width) {
@@ -62,6 +58,10 @@
     border-left: none;
     border-right: none;
     margin-bottom: 0;
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
