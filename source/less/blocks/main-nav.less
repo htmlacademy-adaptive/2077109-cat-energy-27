@@ -79,9 +79,13 @@
   @media (min-width: @tablet-width) {
     position: static;
     display: flex;
-    width: 440px;
+    width: 436px;
     justify-content: space-between;
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
   }
 }
 
@@ -107,10 +111,49 @@
   text-transform: uppercase;
   text-align: center;
   display: block;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.link-current {
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      display: block;
+      background-color: #68b738;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--index {
+      color: #ffffff;
+
+      &::after {
+        background-color: #ffffff;
+      }
+    }
   }
 }

@@ -51,54 +51,47 @@
   flex-direction: column;
   position: relative;
 
-  &--weight-loss::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 53px;
-    top: 21px;
-    left: 22px;
+  @media (min-width: @desktop-width) {
+    min-height: 374px;
+    width: 570px;
   }
+}
 
-  &--weight-gain::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/cat-fat.svg");
-    background-repeat: no-repeat;
-    width: 67px;
-    height: 53px;
+.advantages__img {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+
+  &--cat-fat {
     top: 24px;
     left: 13px;
   }
 
   @media (min-width: @tablet-width) {
-    &--weight-loss::after {
-      left: 446px;
-      top: 92px;
-    }
+    top: 81px;
+    left: 446px;
+    width: 200px;
+    height: 211px;
 
-    &--weight-gain::after {
-      left: 446px;
-      top: 92px;
+    &--cat-fat {
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      left: 412px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 374px;
-    width: 570px;
+    top: 41px;
+    left: 52px;
+    width: 100px;
+    height: 106px;
 
-    &--weight-loss::after {
-      left: 52px;
-      top: 41px;
-    }
-
-    &--weight-gain::after {
-      left: 52px;
-      top: 41px;
+    &--cat-fat {
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 33px;
     }
   }
 }
@@ -128,11 +121,14 @@
   display: flex;
   align-items: center;
   width: 240px;
-  border-top: 1px solid #d9d9d9;
   padding-top: 19px;
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";
@@ -167,9 +163,24 @@
   margin: 0;
   width: 227px;
   padding-left: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 240px;
+    position: absolute;
+    bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
+    &::before {
+      display: none;
+    }
+
     font-size: 16px;
     line-height: 24px;
     width: 340px;

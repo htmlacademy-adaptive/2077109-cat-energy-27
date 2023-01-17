@@ -119,6 +119,11 @@
   align-items: center;
 }
 
+.catalog__item-img {
+  width: 100%;
+  height: 100%;
+}
+
 .catalog__item-title {
   font-family: @main-font;
   font-style: normal;
@@ -238,10 +243,22 @@
   cursor: pointer;
   grid-column: 1/3;
   grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   &--show-more {
     background-color: @gray;
     color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #4444444d;
+    }
   }
 
   @media (min-width: @tablet-width) {

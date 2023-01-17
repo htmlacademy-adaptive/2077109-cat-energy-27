@@ -26,6 +26,10 @@
   padding-top: 39px;
   padding-bottom: 32px;
 
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
@@ -68,6 +72,18 @@
   }
 }
 
+.main-footer__link-icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-footer__description {
   font-family: @secondary-font;
   font-style: normal;
@@ -75,4 +91,9 @@
   font-size: 16px;
   line-height: 19px;
   margin: 0;
+  color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
