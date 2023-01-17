@@ -4,9 +4,9 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 86px;
-    flex-wrap: wrap;
   }
 }
 
@@ -67,7 +67,6 @@
 
 .additionally-products__list {
   .list-reset();
-
   box-sizing: border-box;
   margin-bottom: 31px;
 
@@ -98,6 +97,10 @@
     li:last-child {
       border-bottom: none;
     }
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
