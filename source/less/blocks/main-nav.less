@@ -1,26 +1,69 @@
-.main-header__nav {
+.main-nav {
   width: auto;
 }
 
 .main-nav__wrapper {
-  display: none;
-
   @media (min-width: @tablet-width) {
     display: block;
   }
 }
 
 .main-nav__toggle {
+  z-index: 2;
+  display: block;
   width: 24px;
   height: 19px;
+  cursor: pointer;
   border: none;
   background-color: @white;
   padding: 0;
-  background-image: url("../img/nav_toogle.svg");
-  background-repeat: no-repeat;
+  margin-left: 65px;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    display: block;
+    background-image: url("../img/nav_toogle.svg");
+    width: 24px;
+    height: 19px;
+    background-repeat: no-repeat;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 1.5px;
+      background-color: #000000;
+    }
+
+    &::before {
+      width: 24px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      width: 23px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
   }
 }
 
@@ -35,11 +78,25 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    margin-top: 4px;
     position: static;
     display: flex;
     width: 440px;
     justify-content: space-between;
     background-color: transparent;
+
+    &--form {
+      width: 436px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
+    margin-top: 3px;
+
+    &--catalog {
+      width: 483px;
+    }
   }
 }
 
@@ -65,10 +122,50 @@
   text-transform: uppercase;
   text-align: center;
   display: block;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.link-current {
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      display: block;
+      background-color: #68b738;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--index {
+      color: #ffffff;
+
+      &::after {
+        background-color: #ffffff;
+        bottom: -6px;
+      }
+    }
   }
 }

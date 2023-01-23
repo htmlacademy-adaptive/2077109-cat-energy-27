@@ -1,11 +1,14 @@
 .how-it-works__wrpapper {
+  .container-width();
   margin: 0 auto;
-  padding-bottom: 10px;
+  margin-bottom: 29px;
 
-  .inner-container();
+  @media (min-width: @tablet-width) {
+    margin-bottom: 1px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 200px;
+    margin-bottom: 23px;
     padding-top: 50px;
   }
 }
@@ -16,6 +19,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -29,17 +34,168 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 280px 280px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .how-it-works__item:nth-child(odd) {
+      margin-right: 134px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     .how-it-works__item:not(:last-child) {
       margin-right: 30px;
+    }
+  }
+}
+
+.how-it-works__item {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &--sheet::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    background-color: #68b738;
+    background-image: url("../img/how-it-works/how-it-works-sheet.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &--glass::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    background-color: #68b738;
+    background-image: url("../img/how-it-works/how-it-works-glass.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &--tableware::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    background-color: #68b738;
+    background-image: url("../img/how-it-works/how-it-works-tableware.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &--watch::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    background-color: #68b738;
+    background-image: url("../img/how-it-works/how-it-works-watch.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  @media (min-width: @tablet-width) {
+    align-items: normal;
+    margin-bottom: 37px;
+    width: 250px;
+    min-height: 280px;
+
+    &--sheet::before {
+      width: 80px;
+      height: 80px;
+      top: 32px;
+    }
+
+    &--sheet::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      width: 112px;
+      height: 228px;
+      background-image: url("../img/how-it-work-one.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 32px;
+      left: 127px;
+    }
+
+    &--glass::before {
+      width: 80px;
+      height: 80px;
+      top: 32px;
+    }
+
+    &--glass::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      width: 113px;
+      height: 229px;
+      background-image: url("../img/how-it-work-two.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 32px;
+      left: 123px;
+    }
+
+    &--tableware::before {
+      width: 80px;
+      height: 80px;
+      top: 32px;
+    }
+
+    &--tableware::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      width: 113px;
+      height: 233px;
+      background-image: url("../img/how-it-work-three.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 31px;
+      left: 125px;
+    }
+
+    &--watch::before {
+      width: 80px;
+      height: 80px;
+      top: 32px;
+    }
+
+    &--watch::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      width: 121px;
+      height: 228px;
+      background-image: url("../img/how-it-work-four.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 32px;
+      left: 124px;
     }
   }
 }
@@ -50,9 +206,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 80px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0;
+    margin-top: 143px;
+
+    &--watch {
+      width: 245px;
+    }
+  }
+}
+
+.how-it-works__description-transfer {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }
