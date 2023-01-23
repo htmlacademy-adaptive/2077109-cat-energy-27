@@ -17,6 +17,7 @@
   border: none;
   background-color: @white;
   padding: 0;
+  margin-left: 65px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -77,15 +78,25 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    margin-top: 4px;
     position: static;
     display: flex;
-    width: 436px;
+    width: 440px;
     justify-content: space-between;
     background-color: transparent;
+
+    &--form {
+      width: 436px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 478px;
+    margin-top: 3px;
+
+    &--catalog {
+      width: 483px;
+    }
   }
 }
 
@@ -153,6 +164,7 @@
 
       &::after {
         background-color: #ffffff;
+        bottom: -6px;
       }
     }
   }

@@ -8,11 +8,14 @@
 
 .choose-program__wrapper {
   margin: 0 auto;
-
-  .inner-container();
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -29,8 +32,13 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
+    margin-top: 61px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 56px;
   }
 }
 
@@ -43,11 +51,15 @@
   text-transform: uppercase;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 66px;
   }
 }

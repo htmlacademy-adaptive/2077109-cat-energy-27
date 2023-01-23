@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -27,7 +27,7 @@
       <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--form">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -57,7 +57,7 @@
                   id="appointment-name" name="name" placeholder="Барсик" pattern="^[a-zA-Z]+$">
               </p>
               <p class="program-form__field-point program-form__field-point--basic-data">
-                <label class="program-form__field-label" for="appointment-weight">Вес(кг):<sup>*</sup></label>
+                <label class="program-form__field-label" for="appointment-weight">Вес&nbsp;(кг):<sup>*</sup></label>
                 <input class="program-form__field-input program-form__field-input--condition" type="text"
                   id="appointment-weight" name="weight" placeholder="7" pattern="^[ 0-9]+$">
               </p>
@@ -120,26 +120,26 @@
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
                     class="program-form__field-input--checkbox" type="checkbox" checked name="sweetener">
                   <span class="program-form__field-mark program-form__field-mark--box"></span>
-                  <span class="program-form__field-text">Сахарозаменитель</span></label>
+                  <span class="program-form__field-text program-form__field-text--checkbox">Сахарозаменитель</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
                     class="program-form__field-input--checkbox" type="checkbox" name="water">
                   <span class="program-form__field-mark program-form__field-mark--box"></span><span
-                    class="program-form__field-text">Питьевая
+                    class="program-form__field-text program-form__field-text--checkbox">Питьевая
                     вода</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
                     class="program-form__field-input--checkbox" type="checkbox" name="milk">
                   <span class="program-form__field-mark program-form__field-mark--box"></span><span
-                    class="program-form__field-text">Молоко</span></label>
+                    class="program-form__field-text program-form__field-text--checkbox">Молоко</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox">
                   <input class="program-form__field-input--checkbox" type="checkbox" name="vitamins">
                   <span class="program-form__field-mark program-form__field-mark--box"></span>
-                  <span class="program-form__field-text">Витамины</span></label>
+                  <span class="program-form__field-text program-form__field-text--checkbox">Витамины</span></label>
               </p>
             </div>
           </fieldset>
@@ -155,7 +155,7 @@
       <div class="cooperation__wrapper">
         <div class="cooperation__text">
           <p class="cooperation__description">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="cooperation__adress cooperation__adress--form"><span class="cooperation__adress--span">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="cooperation__map"

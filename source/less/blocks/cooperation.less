@@ -35,10 +35,11 @@
     position: absolute;
     background-color: @white;
     top: 95px;
-    left: 110px;
+    left: 142px;
     width: 565px;
     height: 198px;
     padding: 56px 60px 56px 80px;
+    justify-content: normal;
   }
 }
 
@@ -56,6 +57,11 @@
     width: 172px;
     font-size: 20px;
     line-height: 26px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 77px;
   }
 }
 
@@ -73,6 +79,27 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    &--span {
+      display: block;
+      margin-bottom: 19px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+
+    &--span {
+      margin-bottom: 0;
+    }
+
+    &--form {
+      width: 104px;
+    }
+
+    &--index {
+      margin-bottom: 20px;
+    }
   }
 }
 

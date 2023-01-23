@@ -1,34 +1,37 @@
 .main-header__wrapper {
-  padding: 10px 20px 17px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 65px;
   box-sizing: border-box;
   margin: 0 auto;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
     padding: 0;
+    height: auto;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    background-color: transparent;
-    z-index: 1;
+    width: 1220px;
     margin-top: 55px;
-  }
 
-  &--index {
-    @media (min-width: @desktop-width) {
+    &--index {
       position: absolute;
       left: 0;
       right: 0;
       margin-top: 51px;
+      justify-content: space-between;
+      z-index: 1;
     }
   }
 }
 
-.main-header__logo-cat-energy {
+.main-header__logo-cat-energy-image {
+  display: block;
+  margin-left: 56px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -52,5 +55,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
