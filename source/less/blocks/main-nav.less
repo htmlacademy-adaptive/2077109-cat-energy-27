@@ -65,6 +65,14 @@
   .main-nav--nojs .main-nav__wrapper {
     display: block;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main--nojs {
+    margin-top: 200px;
+  }
 }
 
 .main-nav__list {
@@ -137,28 +145,25 @@
     font-size: 18px;
     line-height: 24px;
     padding: 0;
-  }
 
-  @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.link-current {
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "";
-      display: block;
-      background-color: #68b738;
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      bottom: -8px;
+    &--current {
+      &::after {
+        content: "";
+        display: block;
+        background-color: #68b738;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: -8px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
+    color: #111111;
+    font-size: 20px;
+    line-height: 30px;
+
     &--index {
       color: #ffffff;
 

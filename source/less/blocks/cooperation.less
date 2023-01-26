@@ -17,6 +17,11 @@
   @media (min-width: @tablet-width) {
     width: 628px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
 }
 
 .cooperation__text {
@@ -35,7 +40,6 @@
     position: absolute;
     background-color: @white;
     top: 95px;
-    left: 142px;
     width: 565px;
     height: 198px;
     padding: 56px 60px 56px 80px;
@@ -52,6 +56,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 139px;
+  color: #111111;
 
   @media (min-width: @tablet-width) {
     width: 172px;
@@ -73,29 +78,37 @@
   line-height: 20px;
   margin: 0;
   width: 139px;
+  color: #444444;
+
 
   @media (min-width: @tablet-width) {
     width: 160px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-
-    &--span {
-      display: block;
-      margin-bottom: 19px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     text-align: left;
 
-    &--span {
-      margin-bottom: 0;
-    }
-
     &--form {
       width: 104px;
     }
+
+    &--index {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cooperation__adress-span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
 
     &--index {
       margin-bottom: 20px;
