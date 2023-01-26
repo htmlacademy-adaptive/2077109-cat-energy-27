@@ -71,8 +71,8 @@ const optimizeSvg = () => {
 }
 
 //SPRITE
-const sprite = () => {
-  return gulp.src('source/img/*.svg')
+export const sprite = () => {
+  return gulp.src('source/img/footer/*.svg')
   .pipe(svgstore({
     inlineSvg: true
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,14 +35,14 @@
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link-current" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <main class="main container">
+  <main class="main container main--nojs">
     <section class="choose-program">
       <div class="choose-program__wrapper">
         <h1 class="choose-program__title">Подбор программы</h1>
@@ -70,18 +70,19 @@
             <fieldset class="program-form__field program-form__field--lose-weight-or-gain">
               <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <label class="program-form__field-label program-form__field-label--radio">
-                  <input class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program" checked>
+                  <input class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program" value="weight loss" checked>
                   <span class="program-form__field-mark program-form__field-mark--circle"></span>
                   <span class="program-form__field-text">Похудение</span></label></p>
               <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <label class="program-form__field-label program-form__field-label--radio">
-                  <input class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program">
+                  <input class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program" value="weight gain">
                   <span class="program-form__field-mark program-form__field-mark--circle"></span>
                   <span class="program-form__field-text">Набор
                     массы</span></label></p>
               <p class="program-form__field-point program-form__field-point--lose-weight-or-gain">
                 <label class="program-form__field-label program-form__field-label--radio"><input
-                    class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program">
+                    class="program-form__field-input program-form__field-input--radio" type="radio" name="choose-program" value="I dont know (Need
+                    your advice)">
                   <span class="program-form__field-mark program-form__field-mark--circle"></span>
                   <span class="program-form__field-text">Не знаю (Нужен
                     ваш совет)</span></label></p>
@@ -109,7 +110,7 @@
           </fieldset>
           <fieldset class="program-form__field program-form__field--comments">
             <legend class="program-form__field-title program-form__field-title--comments">Комментарий</legend>
-            <textarea class="program-form__field-textarea" type="text" name="comments"
+            <textarea class="program-form__field-textarea" name="comments"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program-form__field program-form__field--additional-products">
@@ -118,26 +119,26 @@
             <div class="program-form__block program-form__block--checkbox">
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
-                    class="program-form__field-input--checkbox" type="checkbox" checked name="sweetener">
+                    class="program-form__field-input program-form__field-input--checkbox" type="checkbox" checked name="sweetener">
                   <span class="program-form__field-mark program-form__field-mark--box"></span>
                   <span class="program-form__field-text program-form__field-text--checkbox">Сахарозаменитель</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
-                    class="program-form__field-input--checkbox" type="checkbox" name="water">
+                    class="program-form__field-input program-form__field-input--checkbox" type="checkbox" name="water">
                   <span class="program-form__field-mark program-form__field-mark--box"></span><span
                     class="program-form__field-text program-form__field-text--checkbox">Питьевая
                     вода</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox"><input
-                    class="program-form__field-input--checkbox" type="checkbox" name="milk">
+                    class="program-form__field-input program-form__field-input--checkbox" type="checkbox" name="milk">
                   <span class="program-form__field-mark program-form__field-mark--box"></span><span
                     class="program-form__field-text program-form__field-text--checkbox">Молоко</span></label>
               </p>
               <p class="program-form__field-point program-form__field-point--checkbox">
                 <label class="program-form__field-label program-form__field-label--checkbox">
-                  <input class="program-form__field-input--checkbox" type="checkbox" name="vitamins">
+                  <input class="program-form__field-input program-form__field-input--checkbox" type="checkbox" name="vitamins">
                   <span class="program-form__field-mark program-form__field-mark--box"></span>
                   <span class="program-form__field-text program-form__field-text--checkbox">Витамины</span></label>
               </p>
@@ -155,7 +156,7 @@
       <div class="cooperation__wrapper">
         <div class="cooperation__text">
           <p class="cooperation__description">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <p class="cooperation__adress cooperation__adress--form"><span class="cooperation__adress--span">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
+          <p class="cooperation__adress cooperation__adress--form"><span class="cooperation__adress-span">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="cooperation__map"
@@ -173,7 +174,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://vk.com/htmlacademy">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#vk-icon"></use>
+              <use href="img/sprite.svg#vk"></use>
             </svg>
             <span class="visually-hidden">Vk</span>
           </a>
@@ -181,7 +182,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#youtube-icon"></use>
+              <use href="img/sprite.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Youtube</span>
           </a>
@@ -189,7 +190,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://t.me/s/htmlacademy">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#telegram-icon"></use>
+              <use href="img/sprite.svg#telegram"></use>
             </svg>
             <span class="visually-hidden">Telegram</span>
           </a>
@@ -198,7 +199,7 @@
       <a class="main-footer__link main-footer__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="main-footer__description">HTML Academy</p>
         <svg class="main-footer__link-icon" width="27" height="34">
-          <use href="img/sprite.svg#html-academy-icon"></use>
+          <use href="img/sprite.svg#html"></use>
         </svg>
       </a>
     </div>

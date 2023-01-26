@@ -29,20 +29,20 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link link-current link-current--index" href="#">Главная</a>
+              <a class="main-nav__link main-nav__link--current main-nav__link--index" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link-current--index" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link-current--index" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <main class="main container">
+  <main class="main container main--nojs">
     <h1 class="visually-hidden">Кэт Энерджи - функциональное питание для котов</h1>
     <section class="cat-eat">
       <div class="cat-eat__wrapper">
@@ -132,18 +132,16 @@
             <p class="live-example__item-description">затрачено времени</p>
           </li>
           <li class="live-example__item live-example__item--legend ">
-            <p class="live-example__item-legend"><span class="live-example__item-legend--span">Затраты на
+            <p class="live-example__item-legend"><span class="live-example__item-legend-span">Затраты на
                 питание:</span> 15 000 РУБ.</p>
           </li>
         </ul>
         <div class="live-example__slider-block">
-          <picture>
-            <source media="(min-width: 768px)"
-              srcset="img/cat-slider-tablet.png 1x, img/cat-slider-tablet@2x.png 2x">
-            <img class="live-example__img" src="img/cat-slider-mobile.png"
-              srcset="img/cat-slider-mobile@2x.png 2x" width="280" height="256"
-              alt="наполовину толстый наполовину худой кот">
-          </picture>
+          <button class="live-example__button" type="button">
+            <svg class="live-example__button-icon" width="40" height="40">
+              <use href="img/sprite.svg#slider-button"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -152,7 +150,7 @@
       <div class="cooperation__wrapper">
         <div class="cooperation__text">
           <p class="cooperation__description">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <p class="cooperation__adress"><span class="cooperation__adress--span cooperation__adress--index">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
+          <p class="cooperation__adress"><span class="cooperation__adress-span cooperation__adress-span--index">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="cooperation__map"
@@ -170,7 +168,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://vk.com/htmlacademy">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#vk-icon"></use>
+              <use href="img/sprite.svg#vk"></use>
             </svg>
             <span class="visually-hidden">Vk</span>
           </a>
@@ -178,7 +176,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#youtube-icon"></use>
+              <use href="img/sprite.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Youtube</span>
           </a>
@@ -186,7 +184,7 @@
         <li class="main-footer__item">
           <a class="main-footer__link" href="https://t.me/s/htmlacademy">
             <svg class="main-footer__link-icon" width="28" height="22">
-              <use href="img/sprite.svg#telegram-icon"></use>
+              <use href="img/sprite.svg#telegram"></use>
             </svg>
             <span class="visually-hidden">Telegram</span>
           </a>
@@ -195,7 +193,7 @@
       <a class="main-footer__link main-footer__link--html-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="main-footer__description">HTML Academy</p>
         <svg class="main-footer__link-icon" width="27" height="34">
-          <use href="img/sprite.svg#html-academy-icon"></use>
+          <use href="img/sprite.svg#html"></use>
         </svg>
       </a>
     </div>
